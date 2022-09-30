@@ -10,4 +10,6 @@ rails g model Book title:string author:string
 bin/rails db:migrate // migrate the databse
 bin/rails c // create some mock data
 
+http://www.railsstatuscodes.com/  // reference to different status codes and names in rails
+
 
