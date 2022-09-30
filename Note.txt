@@ -12,4 +12,29 @@ bin/rails c // create some mock data
 
 http://www.railsstatuscodes.com/  // reference to different status codes and names in rails
 
+to start testing add gem below and run bundle
+
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+
+  install rspec if you have it on your OS by running the command
+  sudo apt install ruby-rspec-core
+
+  then run rspec  // after installing and it should show 0 examples, 0 failures
+
+rails generate rspec:install  // generates the spec folder and subfolders
+
+bin/rails g model Author first_name:string last_name:string age:integer
+
+bin/rails db:migrate
+
+bin/rails g migration add_author_to_books author:references
+
+bin/rails g migrate remove_author_from_books author:string // remove colun from a table
+
+
+
+
+
+
 
