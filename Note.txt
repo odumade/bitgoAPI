@@ -1,0 +1,13 @@
+BUILD API IN RUBY
+
+rails new BookAPI --api
+bin/rails routes // list the routes   or bin/rails routes | grep book // list the routes
+rails g controller BooksController index
+
+http://localhost:3000/books // return 204 no content or culr http://localhost:3000/books from the terminal
+
+rails g model Book title:string author:string 
+bin/rails db:migrate // migrate the databse
+bin/rails c // create some mock data
+
+
